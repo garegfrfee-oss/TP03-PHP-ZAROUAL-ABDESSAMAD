@@ -1,12 +1,17 @@
 <?php
 /**
  * Auteur : Abdessamad Zaroual
+<<<<<<< Updated upstream
  * Objectif : Partie 2 - Structures de contrôle et boucles (if, switch, for, while)
+=======
+ * Objectif : Partie 3 - Tableaux indexés, associatifs et multidimensionnels
+>>>>>>> Stashed changes
  * Date : 18/10/2026
  */
 
 require_once 'config.php';
 
+<<<<<<< Updated upstream
 // Exercice 2.1 : if / elseif / else
 function mention($note) {
     if ($note >= 16) {
@@ -75,3 +80,44 @@ for ($n = 0; $n <= 10; $n++) {
     echo "$n ";
 }
 echo "<br>";
+=======
+// Exercice 3.1 : Tableau indexé des langages web
+echo "<h3>Exercice 3.1 : Langages Web</h3>";
+$langages = ["HTML", "CSS", "JavaScript", "PHP"];
+
+echo "<ul>";
+foreach ($langages as $lang) {
+    echo "<li>$lang</li>";
+}
+echo "</ul>";
+
+// Exercice 3.2 : Tableau associatif (Étudiant)
+echo "<h3>Exercice 3.2 : Informations de l'étudiant</h3>";
+$etudiant = [
+    "nom" => "Zaroual",
+    "prenom" => "Abdessamad",
+    "filiere" => "Génie Logiciel",
+    "note" => 16.5
+];
+
+echo "Nom : " . $etudiant["nom"] . "<br>";
+echo "Prénom : " . $etudiant["prenom"] . "<br>";
+echo "Filière : " . $etudiant["filiere"] . "<br>";
+echo "Note : " . $etudiant["note"] . "/20<br>";
+
+// Exercice 3.3 : Tableau multidimensionnel (Modules et Notes)
+echo "<h3>Exercice 3.3 : Notes des modules</h3>";
+$modules = [
+    "Algorithmique" => 14,
+    "Programmation Web" => 17,
+    "Base de Données" => 15,
+    "Système d'exploitation" => 13
+];
+
+echo "<table border='1' cellpadding='5' style='border-collapse: collapse;'>";
+echo "<tr><th>Module</th><th>Note / 20</th></tr>";
+foreach ($modules as $module => $note) {
+    echo "<tr><td>$module</td><td>$note</td></tr>";
+}
+echo "</table>";
+>>>>>>> Stashed changes
