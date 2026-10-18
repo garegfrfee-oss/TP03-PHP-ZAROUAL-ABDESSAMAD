@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulaire Saisie - POST</title>
+</head>
+<body>
+    <h2>Formulaire d'inscription (Méthode POST)</h2>
+    <form action="traitement.php" method="POST">
+        <label for="login">Identifiant (Login) :</label>
+        <input type="text" id="login" name="login" required><br><br>
+
+        <label for="password">Mot de passe :</label>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <label for="email">Adresse email :</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <input type="submit" value="Valider et s'inscrire">
+    </form>
+</body>
+</html>
